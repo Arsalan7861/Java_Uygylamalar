@@ -41,7 +41,7 @@ public class Uygulama_5 {
 
         System.out.println("Ders sayisi: " + ders_adeti);
 
-        agno = toplam_a/toplam_kredisi;//AGNO hesaplaması.
+        agno = toplam_a/toplam_kredisi;//AGNO hesaplaması. toplam_a katsayıyla ders notunun çarpımların toplamı.
         //System.out.println("AGNO: " + agno);
         System.out.printf("AGNO: %.2f\n", agno);//'%.2f' Noktadan sonra sadece iki basamağı yazdırıyor.
 
