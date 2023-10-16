@@ -5,7 +5,7 @@ public class Uygulama_4 {
     public static void main(String[] args) {
         int sayi;
         int toplam_bolen = 0;
-        float bolen_ortalamasi = 0;
+        float bolen_ortalamasi;
         int sayac = 0;
 
         Scanner sc = new Scanner(System.in);
