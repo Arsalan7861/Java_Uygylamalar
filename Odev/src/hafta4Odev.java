@@ -5,8 +5,6 @@ public class hafta4Odev {
     static String islemler;// Global degisken, Programin sonuna kadar calisiyor.
     public static void main(String[] args) {
 
-        float sayi;
-
         Scanner scan = new Scanner(System.in);//Kullanicidan aldigimiz sayinin atandigi scanner sinifi.
 
         System.out.println("1- Toplama\n2- Cikarma\n3- Carpma\n4- Bolme");
