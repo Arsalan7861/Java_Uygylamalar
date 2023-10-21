@@ -61,10 +61,14 @@ public class hafta4Odev {
             }
 
             //Secildigi isleme gore hesaplama kosulu.
-            if(islemTuru == 1 && a != 2) toplam += sayi;
-            else if(islemTuru == 2  && a != 2) toplam -= sayi;
-            else if(islemTuru == 3  && a != 2) {if (sayi != 0) toplam *= sayi;}
-            else if(islemTuru == 4  && a != 2) {if (sayi != 0) toplam /= sayi;}
+            if(a != 2) {
+                switch (islemTuru) {
+                    case 1: toplam += sayi; break;
+                    case 2: toplam -= sayi; break;
+                    case 3: if (sayi != 0) toplam *= sayi; break;
+                    case 4: if (sayi != 0) toplam /= sayi; break;
+                }
+            }
 
         }while (sayi != 0);
 
