@@ -17,12 +17,13 @@ public class hafta4Odev {
         else if (islemTuru == 3) islemler = "Carpmak";
         else if (islemTuru == 4) islemler = "Bolmek";
 
-        //Islem fonksiyonun cagirmasi.
+        //Islem metodun cagirmasi.
         islem();
 
     }
 
 
+    //Islem metodu.
     public static void islem (){
         float sayi = 0;
         float toplam = 0;
