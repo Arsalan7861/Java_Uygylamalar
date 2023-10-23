@@ -5,7 +5,7 @@ public class Uygulama_5 {
     public static void main(String[] args){
         int ders_kredisi;//Ders kredileri.
         float ders_notu;//Ders notları.
-        float agno = 0;//AGNO
+        float agno;//AGNO
         int ders_adeti = 0;//Dersin sayıları.
         int toplam_kredisi = 0;//Toplam ders kredileri.
         float toplam_notu = 0;//Toplam ders notları.
