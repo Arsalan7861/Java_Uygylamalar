@@ -30,14 +30,14 @@ public class Uygulama_5 {
                 System.out.print("--> Devam etmek ister misiniz? (Evet icin e Hayir icin h karekterini basiniz).");
                 cevap = scan.nextLine();
 
-                if (!cevap.toLowerCase().equals("e") && !cevap.toLowerCase().equals("h")){
+                if (!cevap.equalsIgnoreCase("e") && !cevap.equalsIgnoreCase("h")){
                     System.out.println("Yanlis tusunu bastiniz, tekrar deneyiniz");
                 }
 
-            }while(!cevap.toLowerCase().equals("e") && !cevap.toLowerCase().equals("h"));
+            }while(!cevap.equalsIgnoreCase("e") && !cevap.equalsIgnoreCase("h"));
 
 
-        }while (!cevap.toLowerCase().equals("h"));
+        }while (!cevap.equalsIgnoreCase("h"));
 
         System.out.println("Ders sayisi: " + ders_adeti);
 
