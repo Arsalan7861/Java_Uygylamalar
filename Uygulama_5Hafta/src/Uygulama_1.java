@@ -1,3 +1,5 @@
+package Uygulama_5Hafta.src;
+
 import java.util.Scanner;
 
 public class Uygulama_1 {
