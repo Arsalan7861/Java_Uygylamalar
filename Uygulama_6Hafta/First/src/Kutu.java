@@ -14,5 +14,3 @@ public class Kutu {
         System.out.println("Hacim = " + a * b * c);
     }
 }
-
-
