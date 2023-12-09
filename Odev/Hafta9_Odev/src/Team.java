@@ -1,5 +1,7 @@
 //Team sinifi.
 import java.util.ArrayList;
+import java.util.Iterator;
+
 public class Team {
     ArrayList<FootballPlayer> footballPlayers = new ArrayList<>();//FootballPlayer sinifindan turetilmis olan nesneleri saklamak icin olusturulmus ArrayList.
     ArrayList<BasketballPlayer> basketballPlayers = new ArrayList<>();//BasketballPlayer sinifindan turetilmis olan nesneleri saklamak icin olusturulmus ArrayList.
@@ -48,12 +50,21 @@ public class Team {
 
     //Tum oyuncularin bilgilerini ekrana yazdirma metodu.
     public void displayTeam(){
-        System.out.println("Football Players: ");
-        footballPlayers.get(0).printDetails();//1. Futbol oyuncunun bilgilerini yazdir.
-        System.out.println();
-        footballPlayers.get(1).printDetails();//2. Futbol oyuncunun bilgilerini yazdir.
-        System.out.println();
-        System.out.println("Basketball Players: ");
-        basketballPlayers.get(0).printDetails();//1. Basketbol oyuncunun bilgilerini yazdir.
+        //footballplayers ArrayList'teki nesneleri iterator ile ekrana yazdirmak.
+        Iterator<FootballPlayer> iterator = footballPlayers.iterator();
+        System.out.println("Futbol Takimi:");
+        while (iterator.hasNext()) {
+            FootballPlayer footballPlayer = iterator.next();
+            footballPlayer.printDetails();
+            System.out.println();
+        }
+        //basketballplayers ArrayList'teki nesneleri iterator ile ekrana yazdirmak.
+        Iterator<BasketballPlayer> iterator1 = basketballPlayers.iterator();
+        System.out.println("Basketbol Takimi:");
+        while (iterator1.hasNext()) {
+            BasketballPlayer basketballPlayer = iterator1.next();
+            basketballPlayer.printDetails();
+            System.out.println();
+        }
     }
 }
