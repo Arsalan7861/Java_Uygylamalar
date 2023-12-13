@@ -1,6 +1,5 @@
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 
 public class DateInfo {
     private int day;
@@ -72,8 +71,7 @@ public class DateInfo {
         SimpleDateFormat sdf = new SimpleDateFormat(pattern);
         Calendar calendar = Calendar.getInstance();
         calendar.set(year, month - 1, day, hour, minute);
-        Date date = new Date(calendar.getTimeInMillis());
-        return sdf.format(date);
+        return sdf.format(calendar.getTime());
     }
 
     public static void main(String[] args) {
