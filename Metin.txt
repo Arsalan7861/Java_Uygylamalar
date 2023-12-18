@@ -1,0 +1,2 @@
+Metin dosyasina Hos geldiniz.
+PrintWriter ve BufferedWriter kullanimi.
